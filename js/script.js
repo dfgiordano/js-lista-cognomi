@@ -12,6 +12,14 @@ console.log(listaCognomi);
 listaCognomi.sort ();
 console.log(listaCognomi);
 /* 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova */
-for (i = 1; i < listaCognomi.length +1; i++) {
+var posizione = -1;
+for (i = 0; i < listaCognomi.length; i++) {
     console.log(listaCognomi.indexOf(cognomeUtente));
-};
+    if (listaCognomi[i] == cognomeUtente) {
+        posizione = i;
+    }
+}
+console.log ("Posizione Js", posizione);
+var posizioneUmana = posizione + 1;
+console.log("PosizioneUmana", posizioneUmana);
+
